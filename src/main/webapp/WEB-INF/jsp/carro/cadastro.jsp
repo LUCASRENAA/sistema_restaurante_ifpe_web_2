@@ -11,7 +11,7 @@
 	<h1>Cadastro de Carro</h1>
 	<a href="/">home</a>
 
-	<form method="post" action="/carro/cadastro">
+	<form method="post" action="/cliente/cadastro">
 	
 		Placa: <input type="text" name="placa"/>
 		Modelo: <input type="text" name="modelo"/>

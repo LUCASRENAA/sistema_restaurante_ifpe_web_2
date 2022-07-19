@@ -146,21 +146,30 @@ body{
     <main class="login">
         <div class="login_container">
             <h1 class="login_title">Registro</h1>
-            <form action="" class="login_form">
+        
+            
+            <form method="post" action="/cliente/cadastro" class="login_form">
 
-                <input type="text" class="login_input" placeholder="Usuário" name="username">
+                <input type="text" class="login_input" placeholder="CPF" name="cpf">
                 <span class="login_border"></span>
 
+                <input type="text" class="login_input" placeholder="Nome" name="nome">
+                <span class="login_border"></span>
+                
+                   <input type="text" class="login_input" placeholder="Telefone" name="Telefone">
+                <span class="login_border"></span>
+                
+                
                 <input type="email" class="login_input" placeholder="E-mail" name="email">
                 <span class="login_border"></span>
 
-                <input type="password" class="login_input" placeholder="Senha" name="password">
+                <input type="password" class="login_input" placeholder="Senha" name="senha">
                 <span class="login_border"></span>
 
                 <input type="password" class="login_input" placeholder="Repita a senha" name="password_repetida">
                 <span class="login_border"></span>
 
-                <button id="sumit" class="login_submit">Registrar</button>
+		<input type = "submit" value="cadastrar"/>
             </form>
         </div>
 

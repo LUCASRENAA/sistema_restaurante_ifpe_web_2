@@ -8,7 +8,23 @@
 </head>
 <body>
 <h1>Cadastrar novos pratos</h1>
+  <form method="post" action="/prato/cadastro">
 
+           
+
+                <input type="text" class="login_input" placeholder="Nome" name="nome">
+                <span class="login_border"></span>
+                
+                   <input type="text" class="login_input" placeholder="Descrição" name="descricao">
+                <span class="login_border"></span>
+                
+                
+                <input type="text" class="login_input" placeholder="Preço" name="preco">
+                <span class="login_border"></span>
+
+
+		<input type = "submit" value="cadastrar"/>
+            </form>
 
 
 ${msg}

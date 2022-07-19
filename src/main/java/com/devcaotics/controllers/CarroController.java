@@ -9,13 +9,16 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.devcaotics.model.entities.Carro;
+import com.devcaotics.model.entities.Prato;
 import com.devcaotics.model.repository.Facade;
 
 @Controller
 public class CarroController {
 	@RequestMapping("/")
 	public String index(Model m) {
+		List<Prato> carros = Facade.getCurrentInstance().readAllPrato();
 		
+		m.addAttribute("pratos",carros);
 		return "index";
 		
 	}

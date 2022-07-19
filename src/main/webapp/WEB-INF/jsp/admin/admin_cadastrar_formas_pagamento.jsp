@@ -9,7 +9,18 @@
 <body>
 <h1>Cadastre novas formas de pagamento</h1>
 
+  <form method="post" action="/formaPagamento/cadastro">
 
+           
+
+                <input type="text" class="login_input" placeholder="Descrição" name="descricao">
+                <span class="login_border"></span>
+                
+             
+
+
+		<input type = "submit" value="cadastrar"/>
+            </form>
 
 ${msg}
 </body>
